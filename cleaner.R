@@ -3,7 +3,7 @@
 
 # rename columns
 f_rename <- function(train_df){
-	cnames <- read.csv('data/Spanish2English.csv',stringsAsFactors=F)
+	cnames <- read.csv('ref/Spanish2English.csv',stringsAsFactors=F)
 	cnames$English <- gsub(' ','_',cnames$English,fixed=T)
 	oldc <- data.frame('Spanish'=names(train_df),stringsAsFactors=F)
 	newc <- cnames[match(oldc$Spanish,cnames$Spanish),'English']
@@ -15,23 +15,37 @@ f_rename <- function(train_df){
 
 # CUT columns/rows
 f_cut <- function(train_df,train=F){
+	
+	t_clean <- proc.time()
 	if(train) {
+		
+		## column cleaning
 		col_var <- apply(train_df,2,var)
+		novar_cols <- which(col_var == 0)
 		print(paste(sum(col_var==0),'columns with 0 variance'))
-		# names(train_df)[col_var == 0] # uncomment to see the col names
 		# 34 columns with 0 variance, let's remove them
+		dup_cols <- which(duplicated(t(train_df)))
+		print(paste(length(dup_cols),'duplicated columns'))
+		# 62 duplicated cols, let's remove them
+		cor_m <- cor(train_df)
+		cor_ix <- which(cor_m==1 & lower.tri(cor_m),arr.ind = T)
+		cor_cols <- setdiff(cor_ix[,1],cor_ix[,2])
+		print(paste(length(cor_cols),'extra perfectly correlated columns'))
+		unused_cols <- names(train_df)[unique(c(novar_cols,dup_cols,cor_cols))]
+		write(unused_cols,file='data/unused_cols')
+		
+		## row cleaning
 		# sum(is.na(train_df)) # no missing values, yay!
 		# sum(dup_rows) # 4807 duplicated rows, let's remove them
 		dup_rows <- duplicated(train_df)
+		print(paste(sum(dup_rows),'duplicated rows'))
 		train_df <- train_df[!dup_rows,]
-		# sum(dup_cols) # 62 duplicated cols, let's remove them
-		dup_cols <- duplicated(t(train_df))
-		unused_col <- names(col_var)[ifelse((col_var == 0) | dup_cols,T,F)]
-		save(unused_col,file='data/unused_col.rda')
+		
 	} else {
-		load('data/unused_col.rda')
+		unused_cols <- read.table('data/unused_cols')[,1]
 	}
-	train_df <- train_df[,!names(train_df) %in% unused_col]
+	train_df <- train_df[,!names(train_df) %in% unused_cols]
+	print(paste('Cleaning took',round((proc.time()-t_clean)[3]),'s'))
 	return(train_df)
 }
 
@@ -73,4 +87,9 @@ f_add_bin <- function(train_df, train=F){
 	return(train_df)
 }
 
-
+f_add_age <- function(train_df){
+	age_bin <- cut(train_df$age,breaks = c(-Inf,seq(20,100,10),Inf))
+	age_m <- model.matrix(~.-1,as.data.frame(age_bin))
+	train_df <- cbind(train_df,age_m)
+	return(train_df)
+}

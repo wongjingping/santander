@@ -1,0 +1,368 @@
+Spanish,English
+var15,age
+imp_ent_var16_ult1,var16 entity amount last
+imp_op_var39_comer_ult1,var39 commercial option amount ultima1
+imp_op_var39_comer_ult3,var39 commercial option amount ultima3
+imp_op_var40_comer_ult1,var40 commercial option amount ultima1
+imp_op_var40_comer_ult3,var40 commercial option amount ultima3
+imp_op_var40_efect_ult1,var40 amount effective option ultima1
+imp_op_var40_efect_ult3,var40 amount effective option ultima3
+imp_op_var40_ult1,var40 option amount ultima1
+imp_op_var41_comer_ult1,var41 option amount commercial ultima1
+imp_op_var41_comer_ult3,var41 option amount commercial ultima3
+imp_op_var41_efect_ult1,var41 amount effective option ultima1
+imp_op_var41_efect_ult3,var41 amount effective option ultima3
+imp_op_var41_ult1,var41 option amount ultima1
+imp_op_var39_efect_ult1,var39 amount effective option ultima1
+imp_op_var39_efect_ult3,var39 amount effective option ultima3
+imp_op_var39_ult1,var39 option amount ultima1
+imp_sal_var16_ult1,var16 salary amount ultima1
+ind_var1_0,var1 indicator 0
+ind_var1,var1 indicator
+ind_var2_0,var2 indicator 0
+ind_var2,var2 indicator
+ind_var5_0,var5 indicator 0
+ind_var5,var5 indicator
+ind_var6_0,var6 indicator 0
+ind_var6,var6 indicator
+ind_var8_0,var8 indicator 0
+ind_var8,var8 indicator
+ind_var12_0,var12 indicator 0
+ind_var12,var12 indicator
+ind_var13_0,var13 indicator 0
+ind_var13_corto_0,var13 short indicator 0
+ind_var13_corto,var13 short indicator
+ind_var13_largo_0,var13 long indicator 0
+ind_var13_largo,var13 long indicator
+ind_var13_medio_0,var13 indicator means 0
+ind_var13_medio,var13 indicator means
+ind_var13,var13 indicator
+ind_var14_0,var14 indicator 0
+ind_var14,var14 indicator
+ind_var17_0,var17 indicator 0
+ind_var17,var17 indicator
+ind_var18_0,var18 indicator 0
+ind_var18,var18 indicator
+ind_var19,var19 indicator
+ind_var20_0,var20 indicator 0
+ind_var20,var20 indicator
+ind_var24_0,var24 indicator 0
+ind_var24,var24 indicator
+ind_var25_cte,var25 indicator cte
+ind_var26_0,var26 indicator 0
+ind_var26_cte,var26 indicator cte
+ind_var26,var26 indicator
+ind_var25_0,var25 indicator 0
+ind_var25,var25 indicator
+ind_var27_0,var27 indicator 0
+ind_var28_0,var28 indicator 0
+ind_var28,var28 indicator
+ind_var27,var27 indicator
+ind_var29_0,var29 indicator 0
+ind_var29,var29 indicator
+ind_var30_0,var30 indicator 0
+ind_var30,var30 indicator
+ind_var31_0,var31 indicator 0
+ind_var31,var31 indicator
+ind_var32_cte,var32 indicator cte
+ind_var32_0,var32 indicator 0
+ind_var32,var32 indicator
+ind_var33_0,var33 indicator 0
+ind_var33,var33 indicator
+ind_var34_0,var34 indicator 0
+ind_var34,var34 indicator
+ind_var37_cte,var37 indicator cte
+ind_var37_0,var37 indicator 0
+ind_var37,var37 indicator
+ind_var39_0,var39 indicator 0
+ind_var40_0,var40 indicator 0
+ind_var40,var40 indicator
+ind_var41_0,var41 indicator 0
+ind_var41,var41 indicator
+ind_var39,var39 indicator
+ind_var44_0,var44 indicator 0
+ind_var44,var44 indicator
+ind_var46_0,var46 indicator 0
+ind_var46,var46 indicator
+num_var1_0,var1 number 0
+num_var1,var1 number
+num_var4,var4 number
+num_var5_0,var5 number 0
+num_var5,var5 number
+num_var6_0,var6 number 0
+num_var6,var6 number
+num_var8_0,var8 number 0
+num_var8,var8 number
+num_var12_0,var12 number 0
+num_var12,var12 number
+num_var13_0,var13 number 0
+num_var13_corto_0,var13 short number 0
+num_var13_corto,short number var13
+num_var13_largo_0,var13 long number 0
+num_var13_largo,var13 long number
+num_var13_medio_0,var13 average number 0
+num_var13_medio,var13 average number
+num_var13,var13 number 
+num_var14_0,var14 number 0
+num_var14,var14 number
+num_var17_0,var17 number 0
+num_var17,var17 number
+num_var18_0,var18 number 0
+num_var18,var18 number
+num_var20_0,var20 number 0
+num_var20,var20 number
+num_var24_0,var24 number 0
+num_var24,var24 number
+num_var26_0,var26 number 0
+num_var26,var26 number
+num_var25_0,var25 number 0
+num_var25,var25 number
+num_op_var40_hace2,var40 option number hace2
+num_op_var40_hace3,var40 option number hace3
+num_op_var40_ult1,var40 option number ultima1
+num_op_var40_ult3,var40 option number ultima3
+num_op_var41_hace2,var41 option number hace2
+num_op_var41_hace3,var41 option number hace3
+num_op_var41_ult1,var41 option number ultima1
+num_op_var41_ult3,var41 option number ultima3
+num_op_var39_hace2,var39 option number hace2
+num_op_var39_hace3,var39 option number hace3
+num_op_var39_ult1,var39 option number ultima1
+num_op_var39_ult3,var39 option number ultima3
+num_var27_0,var27 number 0
+num_var28_0,var28 number 0
+num_var28,var28 number
+num_var27,var27 number
+num_var29_0,var29 number 0
+num_var29,var29 number
+num_var30_0,var30 number 0
+num_var30,var30 number
+num_var31_0,var31 number 0
+num_var31,var31 number
+num_var32_0,var32 number 0
+num_var32,var32 number
+num_var33_0,var33 number 0
+num_var33,var33 number
+num_var34_0,var34 number 0
+num_var34,var34 number
+num_var35,number var35
+num_var37_med_ult2,var37 average number ultima2
+num_var37_0,var37 number 0
+num_var37,var37 number
+num_var39_0,var39 number 0
+num_var40_0,var40 number 0
+num_var40,var40 number
+num_var41_0,var41 number 0
+num_var41,var41 number
+num_var39,var39 number
+num_var42_0,var42 number 0
+num_var42,var42 number
+num_var44_0,var44 number 0
+num_var44,var44 number
+num_var46_0,var46 number 0
+num_var46,var46 number
+saldo_var1,var1 balance
+saldo_var5,var5 balance
+saldo_var6,var6 balance
+saldo_var8,var8 balance
+saldo_var12,var12 balance
+saldo_var13_corto,var13 balance short
+saldo_var13_largo,var13 balance long
+saldo_var13_medio,var13 balance means
+saldo_var13,var13 balance
+saldo_var14,var14 balance
+saldo_var17,var17 balance
+saldo_var18,var18 balance
+saldo_var20,var20 balance
+saldo_var24,var24 balance
+saldo_var26,var26 balance
+saldo_var25,var25 balance
+saldo_var28,var28 balance
+saldo_var27,var27 balance
+saldo_var29,var29 balance
+saldo_var30,var30 balance
+saldo_var31,var31 balance
+saldo_var32,var32 balance
+saldo_var33,var33 balance
+saldo_var34,var34 balance
+saldo_var37,var37 balance
+saldo_var40,var40 balance
+saldo_var41,var41 balance
+saldo_var42,var42 balance
+saldo_var44,var44 balance
+saldo_var46,var46 balance
+var36,var36 balance
+delta_imp_amort_var18_1y3,var18 amortization amount delta 1Y3
+delta_imp_amort_var34_1y3,var34 amortization amount delta 1Y3
+delta_imp_aport_var13_1y3,var13 amortization amount delta 1Y3
+delta_imp_aport_var17_1y3,var17 amortization amount delta 1Y3
+delta_imp_aport_var33_1y3,var33 amortization amount delta 1Y3
+delta_imp_compra_var44_1y3,var44 amortization amount delta 1Y3
+delta_imp_reemb_var13_1y3,var13 refund amount delta 1Y3
+delta_imp_reemb_var17_1y3,var17 refund amount delta 1Y3
+delta_imp_reemb_var33_1y3,var33 refund amount delta 1Y3
+delta_imp_trasp_var17_in_1y3,var17 delta transfer amount in 1Y3
+delta_imp_trasp_var17_out_1y3,var17 delta transfer amount out 1Y3
+delta_imp_trasp_var33_in_1y3,var33 delta transfer amount in 1Y3
+delta_imp_trasp_var33_out_1y3,var33 delta transfer amount out 1Y3
+delta_imp_venta_var44_1y3,ventidada delta amount var44 1Y3
+delta_num_aport_var13_1y3,var13 delta contribution amount 1Y3
+delta_num_aport_var17_1y3,var17 delta contribution amount 1Y3
+delta_num_aport_var33_1y3,var33 delta contribution amount 1Y3
+delta_num_compra_var44_1y3, var44 chain in purchase amount 1Y3
+delta_num_reemb_var13_1y3,var13 delta reimbursement amount 1Y3
+delta_num_reemb_var17_1y3,var17 delta reimbursement amount 1Y3
+delta_num_reemb_var33_1y3,var33 delta reimbursement amount 1Y3
+delta_num_trasp_var17_in_1y3,var17 delta transfer number in 1Y3
+delta_num_trasp_var17_out_1y3,var17 delta transfer number out 1Y3
+delta_num_trasp_var33_in_1y3,var33 delta transfer number in 1Y3
+delta_num_trasp_var33_out_1y3,var33 delta transfer number out 1Y3
+delta_num_venta_var44_1y3,var44 delta ventidada number 1Y3
+imp_amort_var18_hace3,var18 repayment amount hace3
+imp_amort_var18_ult1,var18 repayment amount ultima1
+imp_amort_var34_hace3,var34 repayment amount hace3
+imp_amort_var34_ult1,var34 repayment amount ultima1
+imp_aport_var13_hace3,var13 input amount hace3
+imp_aport_var13_ult1,var13 input amount ultima1
+imp_aport_var17_hace3,var17 input amount hace3
+imp_aport_var17_ult1,var17 input amount ultima1
+imp_aport_var33_hace3,var33 input amount hace3
+imp_aport_var33_ult1,var33 input amount ultima1
+imp_var7_emit_ult1,var7 amount issued ultima1
+imp_var7_recib_ult1,var7 amount received ultima1
+imp_compra_var44_hace3,var44 purchase amount hace3
+imp_compra_var44_ult1,var44  purchase amount ultima1
+imp_reemb_var13_hace3,var13 refund amount hace3
+imp_reemb_var13_ult1,var13 refund amount ultima1
+imp_reemb_var17_hace3,var17 refund amount hace3
+imp_reemb_var17_ult1,var17 refund amount ultima1
+imp_reemb_var33_hace3,var33 refund amount hace3
+imp_reemb_var33_ult1,var33 refund amount ultima1
+imp_var43_emit_ult1,var43 amount issued ultima1
+imp_trans_var37_ult1,var37 Tx amount ultima1
+imp_trasp_var17_in_hace3,var17 transfer amount in hace3
+imp_trasp_var17_in_ult1,var17 transfer amount in ultima1
+imp_trasp_var17_out_hace3,var17 transfer amount out hace3
+imp_trasp_var17_out_ult1,var17 transfer amount out ultima1
+imp_trasp_var33_in_hace3,var33 transfer amount in hace3
+imp_trasp_var33_in_ult1,var33 transfer amount in ultima1
+imp_trasp_var33_out_hace3,var33 transfer amount  out hace3
+imp_trasp_var33_out_ult1,var33 transfer amount out ultima1
+imp_venta_var44_hace3,var44 ventidada amount hace3
+imp_venta_var44_ult1,var44 ventidada amount ultima1
+ind_var7_emit_ult1,var7 indicator issued ultima1
+ind_var7_recib_ult1,var7 indicator received ultima1
+ind_var10_ult1,var10 indicator ultima1
+ind_var10cte_ult1,var10 indicator cte ultima1
+ind_var9_cte_ult1,var9 indicator cte ultima1
+ind_var9_ult1,var9 indicator ultima1
+ind_var43_emit_ult1,var43 indicator issued ultima1
+ind_var43_recib_ult1,var43 indicator received ultima1
+var21,var21
+num_var2_0_ult1,var2 number 0 ultima1
+num_var2_ult1,var2 number ultima1
+num_aport_var13_hace3,var13 input number hace3
+num_aport_var13_ult1,var13 input number  ultima1
+num_aport_var17_hace3,var17 input number  hace3
+num_aport_var17_ult1,var17 input number ultima1
+num_aport_var33_hace3,var33 input number hace3
+num_aport_var33_ult1,var33 input number ultima1
+num_var7_emit_ult1,var7 number issued ultima1
+num_var7_recib_ult1,var7 number received ultima1
+num_compra_var44_hace3,var44 purchase amount hace3 II
+num_compra_var44_ult1,purchase var44 purchase amount ultima1
+num_ent_var16_ult1,var16 entity number ultima1
+num_var22_hace2,var22 number hace2
+num_var22_hace3,var22 number hace3
+num_var22_ult1,var22 number ultima1
+num_var22_ult3,var22 number ultima3
+num_med_var22_ult3,var22 average number ultima3
+num_med_var45_ult3,var45 average number ultima3
+num_meses_var5_ult3,var5 number months ultima3
+num_meses_var8_ult3,var8 number months ultima3
+num_meses_var12_ult3,var12number  months ultima3
+num_meses_var13_corto_ult3,var13 number months short ultima3
+num_meses_var13_largo_ult3,var13 number months long ultima3
+num_meses_var13_medio_ult3,var13 number months average number ultima3
+num_meses_var17_ult3,var17 number months ultima3
+num_meses_var29_ult3,var29 number months ultima3
+num_meses_var33_ult3,var33 number months ultima3
+num_meses_var39_vig_ult3,var39 months vig number ultima3
+num_meses_var44_ult3,var44 number months ultima3
+num_op_var39_comer_ult1,var39 commercial option number ultima1
+num_op_var39_comer_ult3,var39 commercial option number ultima3
+num_op_var40_comer_ult1,var40 commercial option number ultima1
+num_op_var40_comer_ult3,ultima3 commercial option number var40
+num_op_var40_efect_ult1,var40 option number cash ultima1
+num_op_var40_efect_ult3,var40 option number cash ultima3
+num_op_var41_comer_ult1,var41 commercial option number ultima1
+num_op_var41_comer_ult3,var41 commercial option number ultima3
+num_op_var41_efect_ult1,var41 option number cash ultima1
+num_op_var41_efect_ult3,var41 option number cash ultima3
+num_op_var39_efect_ult1,var39 option number cash ultima1
+num_op_var39_efect_ult3,var39 option number cash ultima3
+num_reemb_var13_hace3,var13 reimbursement number hace3
+num_reemb_var13_ult1,var13 reimbursement number ultima1
+num_reemb_var17_hace3,var17 reimbursement number hace3
+num_reemb_var17_ult1,var17 reimbursement number ultima1
+num_reemb_var33_hace3,var33 reimbursement number hace3
+num_reemb_var33_ult1,var33 reimbursement number ultima1
+num_sal_var16_ult1,var16 salary number ultima1
+num_var43_emit_ult1,var43 number issued ultima1
+num_var43_recib_ult1,var43 number received ultima1
+num_trasp_var11_ult1,var11 transfer number ultima1
+num_trasp_var17_in_hace3,var17 transfer number in hace3
+num_trasp_var17_in_ult1,var17 transfer number in ultima1
+num_trasp_var17_out_hace3,var17 number transfer out hace3
+num_trasp_var17_out_ult1,var17 number transfer out ultima1
+num_trasp_var33_in_hace3,var33 transfer number in hace3
+num_trasp_var33_in_ult1,var33 transfer number in ultima1
+num_trasp_var33_out_hace3,var33 number transfer out hace3
+num_trasp_var33_out_ult1,var33 number transfer out ultima1
+num_venta_var44_hace3,var44 ventidada number hace3
+num_venta_var44_ult1,var44 ventidada number ultima1
+num_var45_hace2,var45 number hace2
+num_var45_hace3,var45 number hace3
+num_var45_ult1,var45 number ultima1
+num_var45_ult3,var45 number ultima3
+saldo_var2_ult1,var2 balance ultima1
+saldo_medio_var5_hace2,var5 average balance hace2
+saldo_medio_var5_hace3,var5 average balance hace3
+saldo_medio_var5_ult1,var5 average balance ultima1
+saldo_medio_var5_ult3,var5 average balance ultima3
+saldo_medio_var8_hace2,var8 average balance hace2
+saldo_medio_var8_hace3,var8 average balance hace3
+saldo_medio_var8_ult1,var8 average balance ultima1
+saldo_medio_var8_ult3,var8 average balance ultima3
+saldo_medio_var12_hace2,var12 average balance hace2
+saldo_medio_var12_hace3,var12 average balance hace3
+saldo_medio_var12_ult1,var12 average balance ultima1
+saldo_medio_var12_ult3,var12 average balance ultima3
+saldo_medio_var13_corto_hace2,var13 average balance short hace2
+saldo_medio_var13_corto_hace3,var13 average balance short hace3
+saldo_medio_var13_corto_ult1,var13 average balance short ultima1
+saldo_medio_var13_corto_ult3,var13 average balance short ultima3
+saldo_medio_var13_largo_hace2,var13 average balance long hace2
+saldo_medio_var13_largo_hace3,var13 average balance long hace3
+saldo_medio_var13_largo_ult1,var13 average balance long ultima1
+saldo_medio_var13_largo_ult3,var13 average balance long ultima3
+saldo_medio_var13_medio_hace2,var13 average balance means hace2
+saldo_medio_var13_medio_hace3,var13 average balance means hace3
+saldo_medio_var13_medio_ult1,var13 average balance means ultima1
+saldo_medio_var13_medio_ult3,var13 average balance means ultima3
+saldo_medio_var17_hace2,var17 average balance hace2
+saldo_medio_var17_hace3,var17 average balance hace3
+saldo_medio_var17_ult1,var17 average balance ultima1
+saldo_medio_var17_ult3,var17 average balance ultima3
+saldo_medio_var29_hace2,var29 average balance hace2
+saldo_medio_var29_hace3,var29 average balance hace3
+saldo_medio_var29_ult1,var29 average balance ultima1
+saldo_medio_var29_ult3,var29 average balance ultima3
+saldo_medio_var33_hace2,var33 average balance hace2
+saldo_medio_var33_hace3,var33 average balance hace3
+saldo_medio_var33_ult1,var33 average balance ultima1
+saldo_medio_var33_ult3,var33 average balance ultima3
+saldo_medio_var44_hace2,var44 average balance hace2
+saldo_medio_var44_hace3,var44 average balance hace3
+saldo_medio_var44_ult1,var44 average balance ultima1
+saldo_medio_var44_ult3,var44 average balance ultima3
