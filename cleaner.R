@@ -37,9 +37,9 @@ f_cut <- function(train_df,train=F){
 		## row cleaning
 		# sum(is.na(train_df)) # no missing values, yay!
 		# sum(dup_rows) # 4807 duplicated rows, let's remove them
-		dup_rows <- duplicated(train_df)
-		print(paste(sum(dup_rows),'duplicated rows'))
-		train_df <- train_df[!dup_rows,]
+# 		dup_rows <- duplicated(train_df)
+# 		print(paste(sum(dup_rows),'duplicated rows'))
+# 		train_df <- train_df[!dup_rows,]
 		
 	} else {
 		unused_cols <- read.table('data/unused_cols')[,1]
