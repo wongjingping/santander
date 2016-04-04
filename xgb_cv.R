@@ -80,7 +80,6 @@ p <- p + geom_point(aes(x=nrounds,y=auc,col=max.depth),size=0.5,alpha=0.8)
 p <- p + geom_line(aes(x=nrounds,y=auc_lo,col=max.depth),alpha=0.5)
 p <- p + geom_line(aes(x=nrounds,y=auc_hi,col=max.depth),alpha=0.5)
 p <- p + facet_grid(subsample~colsample_bytree)
-p
 ggsave(filename=paste0('plots/tune_auc_',xgb_name,'.png'), plot=p)
 
 
