@@ -87,9 +87,40 @@ f_add_bin <- function(train_df, train=F){
 	return(train_df)
 }
 
+# ADD binned age (feature engineering)
 f_add_age <- function(train_df){
 	age_bin <- cut(train_df$age,breaks = c(-Inf,seq(20,100,10),Inf))
 	age_m <- model.matrix(~.-1,as.data.frame(age_bin))
 	train_df <- cbind(train_df,age_m)
 	return(train_df)
+}
+
+g_find_topk <- function(train_df, k=10){
+    # train dummy model for extracting top k single variables
+    X <- as.matrix(train_df[,!names(train_df)=='TARGET'])
+    y <- train_df$TARGET
+    params_def <- list('eta'=0.02,'max.depth'=5,'colsample_bytree'=0.7,
+                       'subsample'=0.7,'gamma'=0,'min_child_weight'=1)
+    xgb1 <- xgboost(data=X,label=y,params=params_def,nrounds=500,missing=NA,verbose=0)
+    imp <- xgb.importance(feature_names = names(train_df)[names(train_df)!='TARGET'],model = xgb1)
+    topk_var <- imp$Feature[1:k]
+    save(topk_var,file='data/topk_var.rda')
+}
+
+f_add_2way <- function(train_df, train=F, k=10){
+    if(train){
+        g_find_topk(train_df, k)
+    } else {
+        load('data/topk_var.rda')
+    }
+    for(i in 1:(k-1)){
+        for(j in (i+1):k){
+            var_i <- topk_var[i]
+            var_j <- topk_var[j]
+            train_df[[paste0(var_i,'_mul_',var_j)]] <- train_df[[var_i]] * train_df[[var_j]]
+            train_df[[paste0(var_i,'_div_',var_j)]] <- train_df[[var_i]] / (train_df[[var_j]]+1)
+            train_df[[paste0(var_j,'_div_',var_i)]] <- train_df[[var_j]] / (train_df[[var_i]]+1)
+        }
+    }
+    return(train_df)
 }

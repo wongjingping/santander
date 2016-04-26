@@ -63,18 +63,18 @@ watchlist <- list(train=dtrain)
 param <- list(  objective           = "binary:logistic", 
 				booster             = "gbtree",
 				eval_metric         = "auc",
-				eta                 = 0.0201,
+				eta                 = 0.0202048,
 				max_depth           = 5,
 				subsample           = 0.6815,
-				colsample_bytree    = 0.7
+				colsample_bytree    = 0.701
 )
 
 clf <- xgb.train(   params              = param, 
-					data                = dtrain, 
-					nrounds             = 572, 
-					verbose             = 2,
-					watchlist           = watchlist,
-					maximize            = FALSE
+                    data                = dtrain, 
+                    nrounds             = 560, 
+                    verbose             = 2,
+                    watchlist           = watchlist,
+                    maximize            = FALSE
 )
 
 

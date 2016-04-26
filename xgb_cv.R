@@ -7,34 +7,51 @@ library(pROC)
 library(ggplot2)
 
 
-# read in data
-train_csv <- read.csv('data/train.csv', row.names='ID') # takes ~ 12s
-submit_csv <- read.csv('data/test.csv', row.names='ID') # takes ~ 12s
-
 # cleaning and pre-processing
 if(file.exists('data/train_test.rda')){
+    
+    cat('Loading pre-cleaned data\n')
 	load('data/train_test.rda')
 	train_df <- train_test_l[[1]]
 	X_submit <- train_test_l[[2]]
+
 } else {
+    
+    cat('Cleaning data\n')
+    
+    # read in data
+    train_csv <- read.csv('data/train.csv', row.names='ID') # takes ~ 12s
+    submit_csv <- read.csv('data/test.csv', row.names='ID') # takes ~ 12s
+    
 	source('cleaner.R')
-	train_df <- train_csv %>% f_rename %>% f_cut(train=T) %>% f_replace %>% f_add_age
-	X_submit <- submit_csv %>% f_rename %>% f_cut(train=F) %>% f_replace %>% f_add_age
+	train_df <- train_csv %>% 
+	    f_rename %>% 
+	    f_cut(train=F) %>% 
+	    f_replace %>% 
+	    f_add_age %>%
+	    f_add_2way(train=T,k=20)
+	
+	X_submit <- submit_csv %>% 
+	    f_rename %>% 
+	    f_cut(train=F) %>% 
+	    f_replace %>% 
+	    f_add_age %>%
+	    f_add_2way(train=F)
+	
 	X_submit <- as.matrix(X_submit)
 	train_test_l <- list(train_df,X_submit)
 	save(train_test_l, file='data/train_test.rda')
-	
 }
 X <- as.matrix(train_df[,!names(train_df)=='TARGET'])
 y <- train_df$TARGET
 
 # cross-validation on full training data
-print('Beginning Cross-Validation')
+cat('Beginning Cross-Validation\n')
 nrounds <- 1000
-params <- expand.grid(eta = c(0.02),
+params <- expand.grid(eta = c(0.02,0.0175,0.015),
 					  max.depth = 5,
-					  colsample_bytree = c(0.7,0.5),
-					  subsample = c(0.7,0.5),
+					  colsample_bytree = c(0.7,0.5,0.3),
+					  subsample = c(0.7,0.5,0.3),
 					  gamma = 0,
 					  min_child_weight = 1)
 cv_res <- data.frame()
@@ -99,7 +116,7 @@ xgb_test <- xgboost(data = X,
 					nrounds = best$nrounds,
 					verbose = 0,
 					missing = NA)
-save(xgb_test,file=paste0('models/',xgb_name,'.rda'))
+xgb.save(model = xgb_test, fname = paste0('models/',xgb_name,'.rda'))
 
 # predict on submission set
 print('Predicting for submission')
