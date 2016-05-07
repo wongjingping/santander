@@ -4,3 +4,4 @@
 *.pdf
 .RHistory
 .RData
+.DS_Store

@@ -1,7 +1,7 @@
 
-f_subs <- list.files('data')[grepl('^submit_',list.files('data'))]
+f_subs <- list.files('submissions')[grepl('^submit_',list.files('submissions'))]
 
-sub_l <- lapply(paste0('data/',f_subs),read.csv)
+sub_l <- lapply(paste0('submissions/',f_subs),read.csv)
 ens <- data.frame(ID = sub_l[[1]]$ID,
 				  TARGET = rowMeans(sapply(sub_l,function(x){x$TARGET})))
-write.csv(ens,file='data/ens_1.csv',row.names=F)
+write.csv(ens,file='submissions/ens_1.csv',row.names=F)
