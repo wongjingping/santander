@@ -24,6 +24,6 @@ To blend the final submissions together, run the following on the command line:
 Rscript ensembler.R
 ```
 
-Too bad I was a little lazy and didn't ensemble my models for the final submission. It would have gotten me 27th place on the private LB:
+Too bad I was a little lazy and didn't ensemble my models for the final submission. It would have gotten me the 18th place on the private LB:
 
-![Would-have-been-placing](ref/LB.png)
+![Would-have-been-placing](ref/LB_18.png)
